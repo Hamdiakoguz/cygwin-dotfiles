@@ -1,0 +1,30 @@
+[user]
+	name = Hamdi Akoğuz
+	email = hamdiakoguz@phonoclick.com
+[core]
+	filemode = false
+	ignorecase = true
+	autocrlf = false
+	repositoryformatversion = 0
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	whitespace = nowarn
+	pager = less -r
+[diff]
+	tool = kdiff3
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = /home/hamdiakoguz/kdiff3.sh
+	keepBackup = false
+	trustExitCode = false
+[push]
+	default = current
+[alias]
+	st = status -sb
+ 	di = diff
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset - %C(ul)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+[color]
+	diff = auto
+	ui = auto
