@@ -43,20 +43,29 @@ fi
 #   INFOPATH="${HOME}/info:${INFOPATH}"
 # fi
 
+set bell-style none
+alias e="emacs"
+alias c="clear"
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias cd..='cd ..'
+
 # http://repo.or.cz/w/git.git/blob/HEAD:/contrib/completion/git-completion.bash
 source /cygdrive/c/Program\ Files\ \(x86\)/Git/etc/git-completion.bash
-export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\] $(__git_ps1 " (%s)")\n\$ '
+export PS1='\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0;36m\] $(__git_ps1 " (%s)")\[\e[0m\]\n\$ '
 #'[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 alias text="/cygdrive/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"
 alias np="/cygdrive/c/Program\ Files/Notepad++/notepad++.exe"
 alias gvim="/cygdrive/c/Program\ Files/Vim/vim73/gvim.exe"
 
-VISUAL=nano; export VISUAL
-EDITOR=nano; export EDITOR
+VISUAL=emacs; export VISUAL
+EDITOR=emacs; export EDITOR
 
 alias desktop="cd /cygdrive/c/Users/Hamdiakoguz/Desktop/"
+alias d="cd /cygdrive/d/"
 alias w="cd /cygdrive/d/Projects/"
 
 alias l="ls -haltr --color=auto --group-directories-first"
-alias rmi='rm -i'
+alias rm='rm -I --preserve-root'
