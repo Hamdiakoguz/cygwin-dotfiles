@@ -56,7 +56,7 @@ source /cygdrive/c/Program\ Files\ \(x86\)/Git/etc/git-completion.bash
 export PS1='\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0;36m\] $(__git_ps1 " (%s)")\[\e[0m\]\n\$ '
 #'[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
-alias text="/cygdrive/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"
+alias st="~/st.sh"
 alias np="/cygdrive/c/Program\ Files/Notepad++/notepad++.exe"
 alias gvim="/cygdrive/c/Program\ Files/Vim/vim73/gvim.exe"
 
